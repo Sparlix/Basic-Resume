@@ -1,4 +1,4 @@
-# Basic Portfolio
+# Basic Résumé/Portfolio
 
 Basic Portfolio for anyone to use! Design done using LESS compiler. Style.CSS Included.
 
