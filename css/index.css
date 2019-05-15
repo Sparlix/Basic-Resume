@@ -1,0 +1,474 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: white;
+}
+.container-home {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+nav {
+  text-align: right;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+nav a {
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  color: #1b1b1b;
+  font-size: 25px;
+  font-family: 'Varela Round', sans-serif;
+}
+nav a:hover {
+  color: #505050;
+}
+@media (max-width: 500px) {
+  nav {
+    text-align: center;
+    margin-left: -5%;
+  }
+  nav nav {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  nav a {
+    padding: 0px 0px 0px 24px;
+    font-size: 20px;
+  }
+}
+header {
+  background: crimson;
+  border-radius: 2px;
+  padding-bottom: 100px;
+  box-shadow: 3px 3px 8px black;
+}
+header .profile-image {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+header .profile-image img {
+  width: 400px;
+  box-shadow: 3px 3px 8px black;
+}
+@media (max-width: 500px) {
+  header .profile-image img {
+    width: 90%;
+    box-shadow: 3px 3px 8px black;
+  }
+}
+header .text {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+header .text h1 {
+  font-family: 'Cabin', sans-serif;
+  padding-top: 20px;
+  font-size: 60px;
+}
+header .text p {
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 20px;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+header .text p:nth-last-child(2) {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+header .text a {
+  transition: all 0.3s ease-in-out;
+  padding: 20px 60px 20px 60px;
+  background-color: #575757;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 1px;
+}
+header .text a:hover {
+  background-color: #858585;
+}
+@media (max-width: 500px) {
+  header .text a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.content {
+  display: flex;
+  margin-top: 3vh;
+}
+.content .left {
+  font-family: 'Cabin', sans-serif;
+  min-width: 50%;
+}
+.content .left h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.content .left p {
+  line-height: 30px;
+  margin-right: 40px;
+}
+@media (max-width: 500px) {
+  .content .left p {
+    line-height: 14px;
+  }
+}
+.content .right {
+  font-family: 'Varela Round', sans-serif;
+  min-width: 50%;
+}
+.content .right h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.content .right .items {
+  font-size: 20px;
+}
+.content .right .itemcontent {
+  padding: 10px 0px 10px 15px;
+  border: 1px solid gray;
+  font-weight: normal;
+}
+@media (max-width: 500px) {
+  .content .right {
+    padding: 40px 0px 0px 20px;
+  }
+}
+.history h1 {
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  margin-top: 3vh;
+}
+.history .bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid gray;
+  font-family: 'Cabin', sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  background-color: crimson;
+}
+.history .bar p:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.history .bar p:nth-child(2) {
+  width: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.history .bar p:nth-child(3) {
+  width: 40%;
+  text-align: center;
+}
+.history .bar p:nth-child(4) {
+  width: 25%;
+}
+.history .his {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid gray;
+  font-family: 'Cabin', sans-serif;
+}
+.history .his p:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.history .his p:nth-child(2) {
+  width: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.history .his p:nth-child(3) {
+  width: 40%;
+  text-align: center;
+}
+.history .his p:nth-child(4) {
+  width: 25%;
+}
+.history .his-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid gray;
+  font-family: 'Cabin', sans-serif;
+  background-color: #d6d6d6;
+}
+.history .his-color p:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.history .his-color p:nth-child(2) {
+  width: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.history .his-color p:nth-child(3) {
+  width: 40%;
+  text-align: center;
+}
+.history .his-color p:nth-child(4) {
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .history {
+    font-family: 'Cabin', sans-serif;
+  }
+  .history .bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid gray;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    background-color: crimson;
+  }
+  .history .bar p:nth-child(1) {
+    width: 20%;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .history .bar p:nth-child(2) {
+    width: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .history .bar p:nth-child(3) {
+    width: 40%;
+    text-align: center;
+  }
+  .history .bar p:nth-child(4) {
+    width: 25%;
+  }
+  .history .his {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid gray;
+    font-family: 'Cabin', sans-serif;
+    justify-content: space-between;
+  }
+  .history .his p:nth-child(1) {
+    width: 20%;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .history .his p:nth-child(2) {
+    width: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .history .his p:nth-child(3) {
+    width: 40%;
+    text-align: center;
+  }
+  .history .his p:nth-child(4) {
+    width: 25%;
+  }
+  .history p:nth-child(1) {
+    font-weight: bold;
+  }
+  .history p:nth-child(2) {
+    width: 25%;
+    padding-right: 120px;
+  }
+  .history p:nth-child(3) {
+    width: 25%;
+  }
+  .history p:nth-child(4) {
+    width: 25%;
+  }
+}
+.history h1 {
+  text-align: center;
+}
+.history .bar {
+  font-weight: normal;
+}
+footer {
+  margin-top: 50px;
+  box-shadow: 3px 3px 8px black;
+  background-color: gray;
+}
+footer h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 20px;
+  }
+}
+footer h3 {
+  padding: 10px;
+}
