@@ -2,7 +2,7 @@
 
 Basic Portfolio for anyone to use! Design done using LESS compiler. Style.CSS Included.
 ##DEMO PAGE
-https://www.hostosis.com/preprocessing
+Coming Soon
 ## Future Plans
 
 ```
